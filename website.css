@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.banner{
+    width: 100%;
+    height:100vh;
+    background-image: linear-gradient(rgba(50,50,50,.75), rgba(50,50,50,0)),url(Image/unnamed.jpg);
+    background-size: cover;
+    background-position: center;
+}
+h1{
+    color: aliceblue;
+    padding: 30px 0;
+}
+.bar{
+    text-align: right;
+    margin-right: 5%;
+}
+nav{
+    color:aliceblue;
+    display:inline-block;
+}
+ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex;
+}
+li{
+    display: inline-block;
+    margin-right: 10px;
+}
+a{
+    color:aliceblue;
+    text-decoration:none;
+    padding: 10px;
+}
+.para{
+    text-align: center;
+    margin-top: 20%;
+}
+h2{
+    color:whitesmoke;
+}
+.click{
+    width: 6.5em;
+    height: 2.3em;
+    margin: 0.5em;
+    background: rgb(255, 255, 255);
+    color: white;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+   }
+    #click-a{
+    color:rgb(0, 0, 0);
+   }
+   button:hover {
+    color: rgb(0, 0, 0);
+   }
+   
+   button:after {
+    content: "";
+    background: rgb(3, 84, 177);
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+   }
+   
+   button:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+   }
+   .input{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    font-weight: 500;
+    font-size: .8vw;
+    color: #fff;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 0 .4vw rgb(255, 255, 255), 0 0 0 .15vw transparent;
+    border-radius: 0.4vw;
+    border: none;
+    outline: none;
+    padding: 0.4vw;
+    max-width: 190px;
+    transition: .4s;
+    float:right;
+
+  }
+  
+  .input:hover {
+    box-shadow: 0 0 0 .15vw rgb(255, 255, 255);
+  }
+  
+  .input:focus {
+    box-shadow: 0 0 0 .15vw skyblue;
+  }
+
+  
